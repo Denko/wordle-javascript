@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+  
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+.App-logo {
+    height: 10vmin;
+    pointer-events: none;
+}
+
+
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+
+.tablero-caja {
+    width: 500px;
+    height: 470px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+}
+
+.formFila {
+    display: flex;
+    flex-direction: row;
+}
+
+#mensajeError {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    color: red;
+    background-color: white;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #f6f2f2;
+    border-radius: 10px;
+}
+
+
+.celda {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #f6f2f2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 10px;
+    font-size: 3em;
+    text-transform: capitalize;
+    font-weight: bolder;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 3px 0px;
+    cursor: pointer
+}
+
+.celda-correcta {
+    background-color: rgb(176, 78, 78);
+}
+
+.celda-equivocada {
+    background-color: rgb(89, 171, 89);
+}
+
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+    }
